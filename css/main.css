@@ -97,6 +97,284 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/*--------------------- BASE STYLES - HEADER/FOOTER ---------------------*/
+body {
+  width: 90%; 
+
+}
+
+/***** HEADER *****/
+header, footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header nav {
+
+
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+header nav ul li {
+
+
+}
+
+header nav ul li a {
+
+}
+
+/***** FOOTER *****/
+ footer {
+   flex-direction: column;
+ }
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.copyright {
+  margin: 0 auto;
+}
+
+/*--------------------- MOBILE STYLES - HOMEPAGE ---------------------*/
+/***** BASE STYLES *****/
+.hero-area {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+aside, .features .content-wrapper, .reviews .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.features-items {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.reviews .content-wrapper article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+/***** MAIN *****/
+.hero-area {
+
+}
+
+aside {
+
+}
+
+.features {
+}
+
+.reviews {
+
+}
+
+/*--------------------- MOBILE STYLES - FAQ ---------------------*/
+/***** BASE STYLES *****/
+.faq .content-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.faq-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+
+/***** MAIN *****/
+.faq-content {
+
+}
+
+/*--------------------- MOBILE STYLES - ABOUT ---------------------*/
+/***** BASE STYLES *****/
+.mission .content-wrapper, .contact-section .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/***** MAIN *****/
+.mission {
+
+}
+
+ .map {
+
+ }
+
+ .contact-section {
+
+ }
+
+ /*---------------------  TABLET - BASE STYLES ---------------------*/
+ @media (min-width: 768px) and (max-width: 1199px) {
+   header {
+
+   }
+
+   footer {
+
+   }
+
+ }
+
+/*--------------------- TABLET STYLES - HOMEPAGE ---------------------*/
+@media (min-width: 768px) and (max-width: 1199px) {
+  .hero-area {
+
+  }
+
+  aside {
+
+  }
+
+  .features {
+
+  }
+
+  .reviews {
+
+  }
+
+}
+
+/*--------------------- TABLET STYLES - FAQ ---------------------*/
+@media (min-width: 768px) and (max-width: 1199px) {
+  .faq-content {
+
+  }
+
+
+
+}
+/*--------------------- TABLET STYLES - ABOUT ---------------------*/
+@media (min-width: 768px) and (max-width: 1199px) {
+  .mission {
+
+  }
+
+  .map {
+
+  }
+
+  .contact-section {
+
+  }
+
+}
+
+/*--------------------- DESKTOP - BASE STYLES ---------------------*/
+@media (min-width: 1200px) {
+  header {
+
+  }
+
+  footer {
+
+  }
+
+}
+
+/*--------------------- DESKTOP STYLES - HOMEPAGE ---------------------*/
+@media (min-width: 1200px) {
+  .hero-area {
+
+  }
+
+  aside {
+
+  }
+
+  .features {
+
+  }
+
+  .reviews {
+
+  }
+
+}
+/*--------------------- DESKTOP STYLES - FAQ ---------------------*/
+@media (min-width: 1200px) {
+    .faq-content {
+
+    }
+
+}
+/*--------------------- DESKTOP STYLES - ABOUT ---------------------*/
+@media (min-width: 1200px) {
+  .mission {
+
+  }
+
+  .map {
+
+  }
+
+  .contact-section {
+
+  }
+
+}
 
 /* ==========================================================================
    Helper classes
@@ -262,4 +540,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
