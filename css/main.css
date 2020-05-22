@@ -99,8 +99,15 @@ textarea {
    ========================================================================== */
 /*--------------------- BASE STYLES - HEADER/FOOTER ---------------------*/
 body {
-  width: 90%; 
 
+}
+
+.content-wrapper {
+  width: 100%;
+}
+
+.features p, .footer p {
+  margin: 0; 
 }
 
 /***** HEADER *****/
@@ -109,7 +116,10 @@ header, footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width: 100%;
+}
+
+header {
+  padding: 15px 0;
 }
 
 header .content-wrapper {
@@ -117,11 +127,15 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: 0;
+}
+
+.header-divider {
+  width: 100%;
 }
 
 header nav {
-
-
+  width: 60%;
 }
 
 header nav ul {
@@ -144,6 +158,11 @@ header nav ul li a {
 /***** FOOTER *****/
  footer {
    flex-direction: column;
+ }
+
+ footer .content-wrapper {
+   width: 55%;
+   margin: 50px 0;
  }
 
 .footer-content {
@@ -171,11 +190,11 @@ header nav ul li a {
 }
 
 /*--------------------- MOBILE STYLES - HOMEPAGE ---------------------*/
-/***** BASE STYLES *****/
 .hero-area {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  padding: 50px 15px;
 }
 
 aside, .features .content-wrapper, .reviews .content-wrapper {
@@ -185,10 +204,19 @@ aside, .features .content-wrapper, .reviews .content-wrapper {
   flex-flow: row wrap;
 }
 
+aside {
+  padding: 30px 15px 55px 15px;
+}
+
+.features, .reviews {
+  padding: 50px 15px;
+}
+
 .features-items {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  width: 55%;
 }
 
 .reviews .content-wrapper article {
@@ -198,30 +226,18 @@ aside, .features .content-wrapper, .reviews .content-wrapper {
   flex-flow: row wrap;
 }
 
-/***** MAIN *****/
-.hero-area {
-
-}
-
-aside {
-
-}
-
-.features {
-}
-
-.reviews {
-
+.reviews h3 {
+  width: 50%;
 }
 
 /*--------------------- MOBILE STYLES - FAQ ---------------------*/
-/***** BASE STYLES *****/
 .faq .content-wrapper{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .faq-content {
@@ -231,19 +247,14 @@ aside {
   flex-direction: column;
 }
 
-
-/***** MAIN *****/
-.faq-content {
-
-}
-
 /*--------------------- MOBILE STYLES - ABOUT ---------------------*/
-/***** BASE STYLES *****/
 .mission .content-wrapper, .contact-section .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .map {
@@ -252,18 +263,6 @@ aside {
   align-items: center;
 }
 
-/***** MAIN *****/
-.mission {
-
-}
-
- .map {
-
- }
-
- .contact-section {
-
- }
 
  /*---------------------  TABLET - BASE STYLES ---------------------*/
  @media (min-width: 768px) and (max-width: 1199px) {
