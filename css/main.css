@@ -392,10 +392,6 @@ aside {
       padding-right: 64px;
     }
 
-    header .content-wrapper {
-
-    }
-
     header .content-wrapper a {
       width: 50%;
       text-align: left;
@@ -419,13 +415,6 @@ aside {
     }
 
 /***** FOOTER *****/
-    footer {
-
-    }
-
-    footer .content-wrapper {
-    }
-
     .footer-content {
       display: flex;
       justify-content: space-between;
@@ -446,15 +435,22 @@ aside {
      padding: 0 64px;
    }
 
+   .hero-area h1 {
+     width: 85%;
+   }
+
    /***** ASIDE *****/
-   aside .content-wrapper {
+   aside {
      margin-top: 50px;
      margin-bottom: 50px;
+     padding: 0 64px;
+   }
+
+   aside .content-wrapper {
      display: flex;
      justify-content: space-between;
      align-items: baseline;
      flex-flow: row wrap;
-     padding: 0 64px;
    }
 
    aside .content-wrapper .form-description,
@@ -539,7 +535,7 @@ aside {
    }
 
    .contact-section .content-wrapper h2 {
-     width: 100%;
+     width: 85%;
    }
 
    .contact-section .content-wrapper address div {
@@ -556,51 +552,76 @@ aside {
 @media only screen and (min-width: 1200px) {
   /*Desktop styles here*/
    /*--------------------- DESKTOP - BASE STYLES ---------------------*/
-     header {
+   .content-wrapper {
+     max-width: 960px;
+   }
 
-     }
-
-     footer {
-
-     }
-
-
+   /***** HEADER *****/
+   header {
+     padding-left: 100px;
+     padding-right: 100px;
+   }
 
    /*--------------------- DESKTOP STYLES - HOMEPAGE ---------------------*/
-     .hero-area {
+   /***** HERO AREA *****/
+    .hero-area {
+      padding: 0 100px;
+    }
 
-     }
+    .hero-area h1 {
+      width: 75%;
+    }
 
-     aside {
+    /***** ASIDE *****/
+    aside {
+      padding: 0 100px;
+    }
 
-     }
+    aside .content-wrapper {
+      justify-content: space-around;
+    }
 
-     .features {
+    aside .content-wrapper .form-description,
+    aside .content-wrapper .form {
+      width: 33%;
+    }
 
-     }
+    /***** FEATURES *****/
+    .features {
+      padding: 0 100px;
+    }
 
+    .features h2 {
+      width: 90%;
+    }
+
+    .features-items {
+      padding: 25px 60px;
+      flex-basis: 20%;
+    }
+
+     /***** REVIEWS *****/
      .reviews {
-
+       padding: 0 100px;
      }
 
    /*--------------------- DESKTOP STYLES - FAQ ---------------------*/
-       .faq-content {
-
-       }
+     .faq {
+       padding: 0 100px;
+     }
 
    /*--------------------- DESKTOP STYLES - ABOUT ---------------------*/
-     .mission {
-
+     .mission, .contact-section {
+       padding: 0 100px;
      }
 
-     .map {
-
+     .mission h2 {
+       width: 90%;
      }
 
-     .contact-section {
-
+     .contact-section .content-wrapper h2 {
+       width: 100%;
      }
-
 }
 
 /* ==========================================================================
