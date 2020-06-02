@@ -109,6 +109,9 @@ body {
 
 /***** HEADER *****/
 header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 15px 0;
 }
 
@@ -154,14 +157,19 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
+  flex-direction: column;
 }
 
  footer .content-wrapper {
-   margin: 0 50px;
+   margin: 50px 0;
+   width: 55%;
 }
 
  .footer-content {
+ }
+
+ .footer p {
+   margin: 0;
  }
 
  .contact, .social {
@@ -173,6 +181,7 @@ footer {
 
  .contact {
    font-style: normal;
+   margin-bottom: 50px;
  }
 
 .social-icons {
@@ -182,41 +191,35 @@ footer {
 }
 
 .copyright {
-  margin: 0;
+  margin: 20px 0;
   text-align: center;
 }
 
 /*--------------------- MOBILE STYLES - HOMEPAGE ---------------------*/
-/***** GENERAL *****/
-aside .content-wrapper, .reviews .content-wrapper {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-.features .content-wrapper, .reviews .content-wrapper {
-  padding: 50px 15px;
-}
-
-.features p, .footer p {
-  margin: 0;
-}
-
 /***** HERO AREA *****/
 .hero-area {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
   padding: 50px 15px;
 }
 
 /***** ASIDE *****/
-aside .content-wrapper {
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
   padding: 30px 15px 55px 15px;
 }
 
 /***** FEATURES *****/
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 15px;
+}
+
 .features .content-wrapper {
   display: flex;
   justify-content: center;
@@ -226,32 +229,29 @@ aside .content-wrapper {
 
 .features-items {
   width: 55%;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.features p {
+  margin: 0;
 }
 
 /***** REVIEWS *****/
+.reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  padding: 50px 15px;
+}
+
 .reviews h3 {
   width: 50%;
 }
 
 /*--------------------- MOBILE STYLES - FAQ ---------------------*/
-.faq .content-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.faq-content {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
-}
-
-/*--------------------- MOBILE STYLES - ABOUT ---------------------*/
-.mission .content-wrapper, .contact-section .content-wrapper {
+.faq {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -260,10 +260,29 @@ aside .content-wrapper {
   padding-right: 15px;
 }
 
-.contact-content {
+.faq .content-wrapper {
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row wrap;
+}
 
+/*--------------------- MOBILE STYLES - ABOUT ---------------------*/
+.mission, .contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
+.mission .content-wrapper, .contact-section .content-wrapper {
+
+}
+
+.contact-content {
+  font-style: normal;
 }
 
 .map {
@@ -365,16 +384,16 @@ aside .content-wrapper {
     .content-wrapper {
       max-width: 640px;
       margin: 100px 0;
-      width: 80%;
     }
 
     /***** HEADER *****/
     header {
+      padding-left: 64px;
+      padding-right: 64px;
     }
 
     header .content-wrapper {
-      padding-left: 64px;
-      padding-right: 64px;
+
     }
 
     header .content-wrapper a {
@@ -422,9 +441,6 @@ aside .content-wrapper {
     }
 
  /*--------------------- TABLET STYLES - HOMEPAGE ---------------------*/
-  /***** GENERAL *****/
-
-
   /***** HERO AREA *****/
    .hero-area {
      padding: 0 64px;
@@ -448,9 +464,13 @@ aside .content-wrapper {
    }
 
    /***** FEATURES *****/
+   .features {
+     padding: 0 64px;
+   }
+
    .features .content-wrapper {
      justify-content: space-between;
-     padding: 0 64px;
+     align-items: baseline;
    }
 
    .features-items {
@@ -463,7 +483,7 @@ aside .content-wrapper {
    }
 
    /***** REVIEWS *****/
-   .reviews .content-wrapper {
+   .reviews {
      padding: 0 64px;
    }
 
@@ -481,16 +501,14 @@ aside .content-wrapper {
    }
 
  /*--------------------- TABLET STYLES - FAQ ---------------------*/
-   .faq .content-wrapper {
+   .faq {
      padding: 0 64px;
      margin: 50px 0;
    }
 
-   .faq .content-wrapper div {
-     display: flex;
+   .faq .content-wrapper {
      justify-content: space-between;
      align-items: baseline;
-     flex-flow: row wrap;
    }
 
    .faq-content {
@@ -502,7 +520,7 @@ aside .content-wrapper {
    }
 
  /*--------------------- TABLET STYLES - ABOUT ---------------------*/
-   .mission .content-wrapper, .contact-section .content-wrapper {
+   .mission, .contact-section {
      padding: 0 64px;
    }
 
@@ -525,15 +543,13 @@ aside .content-wrapper {
    }
 
    .contact-section .content-wrapper address div {
-     flex-basis: 45%;
-     font-style: normal;
+     width: 45%;
    }
 
    .contact-content {
      display: flex;
      justify-content: space-between;
      align-items: baseline;
-     width: 100%;
    }
 }
 
