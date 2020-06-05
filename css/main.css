@@ -97,16 +97,63 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/*--------------------- BASE STYLES ---------------------*/
+html {
+  font-size: 16px;
 
-/*--------------------- BASE STYLES - MOBILE ---------------------*/
+}
+
 body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
   width: 100%;
+
+}
+
+ul, ol {
+  list-style: none;
+
+
+}
+
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.875em;
+}
+
+h3, h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.125em;
+}
+
+p {
+  font-size: 0.875em;
+  line-height: 1.285;
+}
+
+img {
+
+}
+
+figure {
+
+}
+
+address {
+  font-style: normal;
+
 }
 
 .content-wrapper {
   width: 90%;
 }
 
+/*--------------------- BASE STYLES - HEADER/FOOTER ---------------------*/
 /***** HEADER *****/
 header {
   display: flex;
@@ -135,7 +182,6 @@ header nav {
 }
 
 header nav ul {
-  list-style: none;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -180,7 +226,6 @@ footer {
  }
 
  .contact {
-   font-style: normal;
    margin-bottom: 50px;
  }
 
@@ -282,7 +327,6 @@ aside {
 }
 
 .contact-content {
-  font-style: normal;
 }
 
 .map {
