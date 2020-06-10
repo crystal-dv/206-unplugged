@@ -100,35 +100,40 @@ textarea {
 /*--------------------- BASE STYLES ---------------------*/
 html {
   font-size: 16px;
-
 }
 
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   width: 100%;
-
+  color: #e2e3ed;
 }
 
 ul, ol {
   list-style: none;
-
-
 }
 
 a {
-  color: #e2e3ed;
   text-decoration: none;
+  color: #e2e3ed;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.25em;
+  font-weight: normal;
 }
 
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
+  font-weight: normal;
 }
 
 h3, h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.125em;
+  font-weight: normal;
 }
 
 p {
@@ -146,7 +151,6 @@ figure {
 
 address {
   font-style: normal;
-
 }
 
 .content-wrapper {
@@ -160,6 +164,7 @@ header {
   justify-content: center;
   align-items: center;
   padding: 15px 0;
+  background: #202322;
 }
 
 header .content-wrapper {
@@ -179,6 +184,7 @@ header .content-wrapper a {
 
 header nav {
   width: 60%;
+  text-transform: uppercase;
 }
 
 header nav ul {
@@ -204,6 +210,9 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background: #202322;
+  text-align: center;
+
 }
 
  footer .content-wrapper {
@@ -229,13 +238,13 @@ footer {
    margin-bottom: 50px;
  }
 
-.social-icons {
+ .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.copyright {
+  .copyright {
   margin: 20px 0;
   text-align: center;
 }
@@ -255,6 +264,34 @@ aside {
   align-items: center;
   flex-flow: row wrap;
   padding: 30px 15px 55px 15px;
+  background: #527158;
+
+}
+
+aside .form {
+  margin-top: 30px;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /***** FEATURES *****/
@@ -289,6 +326,7 @@ aside {
   align-items: center;
   flex-flow: row wrap;
   padding: 50px 15px;
+  background: #2a423a;
 }
 
 .reviews h3 {
@@ -425,6 +463,18 @@ aside {
 @media only screen and (min-width: 768px) {
   /*Tablet styles here*/
   /*---------------------  TABLET - BASE STYLES ---------------------*/
+    h1 {
+      font-size: 3em;
+    }
+
+    h2 {
+      font-size: 2.25em;
+    }
+
+    h3, h4 {
+      font-size: 1.5em;
+    }
+
     .content-wrapper {
       max-width: 640px;
       margin: 100px 0;
@@ -596,6 +646,26 @@ aside {
 @media only screen and (min-width: 1200px) {
   /*Desktop styles here*/
    /*--------------------- DESKTOP - BASE STYLES ---------------------*/
+   body {
+     font-size: 1.125em;
+   }
+
+   h1 {
+     font-size: 3.333em;
+   }
+
+   h2 {
+     font-size: 2em;
+   }
+
+   h3, h4 {
+     font-size: 1.6em;
+   }
+
+   p {
+     line-height: 1.333;
+   }
+
    .content-wrapper {
      max-width: 960px;
    }
