@@ -109,7 +109,8 @@ body {
   color: #e2e3ed;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -130,7 +131,8 @@ h2 {
   font-weight: normal;
 }
 
-h3, h4 {
+h3,
+h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.125em;
   font-weight: normal;
@@ -142,11 +144,11 @@ p {
 }
 
 img {
-
+  width: 100%;
 }
 
 figure {
-
+  margin: 0;
 }
 
 address {
@@ -155,6 +157,7 @@ address {
 
 .content-wrapper {
   width: 90%;
+  max-width: 320px;
 }
 
 /*--------------------- BASE STYLES - HEADER/FOOTER ---------------------*/
@@ -163,6 +166,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
   padding: 15px 0;
   background: #202322;
 }
@@ -175,7 +179,12 @@ header .content-wrapper {
   margin: 0;
 }
 
-header .content-wrapper a {
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .header-divider {
@@ -185,6 +194,7 @@ header .content-wrapper a {
 header nav {
   width: 60%;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 header nav ul {
@@ -195,15 +205,6 @@ header nav ul {
   padding: 0;
 }
 
-header nav ul li {
-
-
-}
-
-header nav ul li a {
-
-}
-
 /***** FOOTER *****/
 footer {
   display: flex;
@@ -212,7 +213,6 @@ footer {
   flex-direction: column;
   background: #202322;
   text-align: center;
-
 }
 
  footer .content-wrapper {
@@ -227,7 +227,8 @@ footer {
    margin: 0;
  }
 
- .contact, .social {
+ .contact,
+ .social {
    display: flex;
    justify-content: center;
    align-items: center;
@@ -252,9 +253,12 @@ footer {
 /*--------------------- MOBILE STYLES - HOMEPAGE ---------------------*/
 /***** HERO AREA *****/
 .hero-area {
+  height: 500px;
   display: flex;
   justify-content: center;
   padding: 50px 15px;
+  background: url('../img/jake-melara-30679-unsplash.jpg') center no-repeat #333;
+  background-size: cover;
 }
 
 /***** ASIDE *****/
@@ -300,6 +304,8 @@ input[type=button] {
   justify-content: center;
   align-items: center;
   padding: 50px 15px;
+  background: url('../img/rawpixel-800820-unsplash1.jpg') center no-repeat #333;
+  background-size: cover;
 }
 
 .features .content-wrapper {
@@ -351,7 +357,8 @@ input[type=button] {
 }
 
 /*--------------------- MOBILE STYLES - ABOUT ---------------------*/
-.mission, .contact-section {
+.mission,
+.contact-section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -360,7 +367,8 @@ input[type=button] {
   padding-right: 15px;
 }
 
-.mission .content-wrapper, .contact-section .content-wrapper {
+.mission .content-wrapper,
+.contact-section .content-wrapper {
 
 }
 
@@ -471,7 +479,8 @@ input[type=button] {
       font-size: 2.25em;
     }
 
-    h3, h4 {
+    h3,
+    h4 {
       font-size: 1.5em;
     }
 
@@ -486,22 +495,23 @@ input[type=button] {
       padding-right: 64px;
     }
 
-    header .content-wrapper a {
-      width: 50%;
-      text-align: left;
+    header .content-wrapper {
+      justify-content: space-between;
+    }
+
+    header figure {
+      width: 30%;
     }
 
     header nav {
-      width: 50%;
+      width: 55%;
       display: flex;
       justify-content: flex-end;
     }
 
     header nav ul {
-      width: 50%;
-    }
-
-    header nav ul li a {
+      width: 40%;
+      justify-content: space-between;
     }
 
     .header-divider {
@@ -515,7 +525,8 @@ input[type=button] {
       align-items: baseline;
     }
 
-    .contact, .social {
+    .contact,
+    .social {
       width: 35%;
     }
 
@@ -526,6 +537,7 @@ input[type=button] {
  /*--------------------- TABLET STYLES - HOMEPAGE ---------------------*/
   /***** HERO AREA *****/
    .hero-area {
+     height: 600px;
      padding: 0 64px;
    }
 
@@ -535,21 +547,23 @@ input[type=button] {
 
    /***** ASIDE *****/
    aside {
-     margin-top: 50px;
-     margin-bottom: 50px;
      padding: 0 64px;
    }
 
    aside .content-wrapper {
+     margin: 50px 0;
      display: flex;
      justify-content: space-between;
      align-items: baseline;
      flex-flow: row wrap;
    }
 
-   aside .content-wrapper .form-description,
-   aside .content-wrapper .form {
+   aside .content-wrapper .form-description {
      width: 40%;
+   }
+
+   aside .content-wrapper .form {
+     width: 45%;
      margin: 0;
    }
 
@@ -577,17 +591,26 @@ input[type=button] {
      padding: 0 64px;
    }
 
+   .reviews h2 {
+     width: 75%;
+   }
+
    .reviews article {
-     width: 50%;
+     width: 100%;
      display: flex;
-     justify-content: flex-start;
-     align-items: center;
+     justify-content: space-between;
+     align-items: flex-start;
      flex-flow: row wrap;
    }
 
+   .reviews figure,
+   .reviews article div {
+     width: 48%;
+   }
+
    .reviews h3 {
-     width: 100%;
-     margin-bottom: 0;
+     width: 75%;
+     margin: 0;
    }
 
  /*--------------------- TABLET STYLES - FAQ ---------------------*/
@@ -610,7 +633,8 @@ input[type=button] {
    }
 
  /*--------------------- TABLET STYLES - ABOUT ---------------------*/
-   .mission, .contact-section {
+   .mission,
+   .contact-section {
      padding: 0 64px;
    }
 
@@ -658,7 +682,8 @@ input[type=button] {
      font-size: 2em;
    }
 
-   h3, h4 {
+   h3,
+   h4 {
      font-size: 1.6em;
    }
 
@@ -674,6 +699,18 @@ input[type=button] {
    header {
      padding-left: 100px;
      padding-right: 100px;
+   }
+
+   header figure {
+     width: 25%;
+   }
+
+   header nav {
+     width: 30%;
+   }
+
+   header nav ul {
+     width: 50%;
    }
 
    /*--------------------- DESKTOP STYLES - HOMEPAGE ---------------------*/
@@ -719,13 +756,19 @@ input[type=button] {
        padding: 0 100px;
      }
 
+     .reviews article div {
+       width: 42%;
+       padding: 0 40px;
+     }
+
    /*--------------------- DESKTOP STYLES - FAQ ---------------------*/
      .faq {
        padding: 0 100px;
      }
 
    /*--------------------- DESKTOP STYLES - ABOUT ---------------------*/
-     .mission, .contact-section {
+     .mission,
+     .contact-section {
        padding: 0 100px;
      }
 
