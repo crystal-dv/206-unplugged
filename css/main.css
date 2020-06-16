@@ -325,6 +325,11 @@ input[type=button] {
   margin: 0;
 }
 
+.features i {
+	font-size: 3.75em;
+  margin-bottom: 40px;
+}
+
 /***** REVIEWS *****/
 .reviews {
   display: flex;
@@ -781,7 +786,7 @@ input[type=button] {
      }
 
      .map figure {
-       padding-bottom: 37%;     
+       padding-bottom: 37%;
      }
 
      .contact-section .content-wrapper h2 {
