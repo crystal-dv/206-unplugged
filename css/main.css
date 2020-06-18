@@ -220,12 +220,9 @@ footer {
    width: 55%;
 }
 
- .footer-content {
- }
-
  .footer p {
    margin: 0;
- }
+}
 
  .contact,
  .social {
@@ -240,13 +237,27 @@ footer {
  }
 
  .social-icons {
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-  .copyright {
-  margin: 20px 0;
+ .social-icons p {
+  background: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ .social-icons i {
+  font-size: 1.125em;
+}
+
+ .copyright {
   text-align: center;
 }
 
@@ -528,6 +539,14 @@ input[type=button] {
     }
 
 /***** FOOTER *****/
+    footer {
+      padding: 0 64px;
+    }
+
+    footer .content-wrapper {
+      width: 80%;
+    }
+
     .footer-content {
       display: flex;
       justify-content: space-between;
@@ -537,6 +556,14 @@ input[type=button] {
     .contact,
     .social {
       width: 35%;
+    }
+
+    .social-icons {
+      justify-content: space-between;
+    }
+
+    .social-icons i {
+      font-size: 1.125em;
     }
 
     .copyright {
@@ -697,6 +724,7 @@ input[type=button] {
    }
 
    p {
+     font-size: 1em;
      line-height: 1.333;
    }
 
@@ -720,6 +748,24 @@ input[type=button] {
 
    header nav ul {
      width: 50%;
+   }
+
+   /***** FOOTER *****/
+   footer {
+     padding: 0 100px;
+   }
+
+   footer .content-wrapper {
+     width: 90%;
+   }
+
+   .contact, .social {
+     width: 20%;
+     padding: 0 3em; 
+   }
+
+   .social-icons i {
+     font-size: 1em;
    }
 
    /*--------------------- DESKTOP STYLES - HOMEPAGE ---------------------*/
