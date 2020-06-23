@@ -100,6 +100,7 @@ textarea {
 /*--------------------- BASE STYLES ---------------------*/
 html {
   font-size: 16px;
+  background: #202322;  
 }
 
 body {
@@ -168,7 +169,6 @@ header {
   align-items: center;
   flex-flow: row wrap;
   padding: 15px 0;
-  background: #202322;
 }
 
 header .content-wrapper {
@@ -213,7 +213,6 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: #202322;
   text-align: center;
 }
 
